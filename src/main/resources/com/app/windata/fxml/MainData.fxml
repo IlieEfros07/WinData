@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.app.windata.controllers.MainDataController"
+            prefWidth="800" prefHeight="600"
+            styleClass="main-container">
+
+
+    <top>
+        <VBox styleClass="header-section">
+            <HBox alignment="CENTER_LEFT" spacing="20" styleClass="header-content">
+                <padding>
+                    <Insets top="20" right="20" bottom="20" left="20"/>
+                </padding>
+                <Label text="System Monitor" styleClass="app-title"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Label fx:id="statusLabel" text="Ready" styleClass="status-label"/>
+            </HBox>
+        </VBox>
+    </top>
+
+
+    <left>
+        <VBox styleClass="sidebar" prefWidth="200" spacing="5">
+            <padding>
+                <Insets top="20" right="15" bottom="20" left="15"/>
+            </padding>
+
+            <Label text="Navigation" styleClass="nav-header"/>
+
+            <VBox spacing="8" styleClass="nav-buttons">
+                <Button text="General Info" fx:id="generalBtn" onAction="#showGeneral"
+                        styleClass="nav-button" prefWidth="170" prefHeight="40"/>
+                <Button text="Components" fx:id="componentsBtn" onAction="#showComponents"
+                        styleClass="nav-button" prefWidth="170" prefHeight="40"/>
+                <Button text="Network" fx:id="networkBtn" onAction="#showNetwork"
+                        styleClass="nav-button" prefWidth="170" prefHeight="40"/>
+            </VBox>
+
+            <Region VBox.vgrow="ALWAYS"/>
+
+
+        </VBox>
+    </left>
+
+    <center>
+        <StackPane styleClass="content-container">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <AnchorPane fx:id="contentPane" styleClass="content-pane"/>
+
+            <VBox fx:id="loadingPane" alignment="CENTER" spacing="15"
+                  styleClass="loading-pane" visible="false">
+                <ProgressIndicator prefWidth="50" prefHeight="50"/>
+                <Label text="Loading..." styleClass="loading-text"/>
+            </VBox>
+        </StackPane>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER_LEFT" spacing="20" styleClass="footer-section">
+            <padding>
+                <Insets top="10" right="20" bottom="15" left="20"/>
+            </padding>
+            <Label fx:id="lastUpdatedLabel" text="Last updated: Never" styleClass="footer-text"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Label fx:id="versionLabel" text="v1.0.0" styleClass="footer-text"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>

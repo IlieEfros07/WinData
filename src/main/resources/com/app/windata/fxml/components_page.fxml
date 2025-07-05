@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.app.windata.controllers.ComponentsPageController"
+      spacing="20" styleClass="page-container">
+
+    <HBox alignment="CENTER_LEFT" spacing="15" styleClass="page-header">
+        <Label text="System Information" styleClass="page-title"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button text="Refresh" onAction="#initialize" styleClass="action-button-primary"/>
+    </HBox>
+
+
+    <ScrollPane fitToWidth="true" styleClass="content-scroll">
+        <VBox spacing="15" styleClass="cards-container">
+            <padding>
+                <Insets top="5" right="5" bottom="5" left="5"/>
+            </padding>
+
+
+            <VBox spacing="12" styleClass="data-card">
+                <HBox alignment="CENTER_LEFT" spacing="10">
+                    <Label text="System Details" styleClass="card-title"/>
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <Label fx:id="cardStatusLabel" text="●" styleClass="status-indicator"/>
+                </HBox>
+
+                <TextArea fx:id="dataArea"
+                          promptText="System data will appear here..."
+                          styleClass="data-text-area"
+                          wrapText="true"
+                          editable="false"
+                          prefRowCount="12"/>
+            </VBox>
+
+
+
+        </VBox>
+    </ScrollPane>
+
+</VBox>

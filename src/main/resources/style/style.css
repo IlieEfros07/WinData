@@ -1,0 +1,318 @@
+
+.main-container {
+    -fx-background-color: #f5f6fa;
+}
+
+
+.header-section {
+    -fx-background-color: linear-gradient(to right, #667eea 0%, #764ba2 100%);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 4, 0, 0, 2);
+}
+
+.header-content {
+    -fx-background-color: transparent;
+}
+
+.app-title {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.status-label {
+    -fx-text-fill: #e8f4fd;
+    -fx-font-size: 14px;
+    -fx-padding: 8 16;
+    -fx-background-color: rgba(255,255,255,0.2);
+    -fx-background-radius: 15;
+}
+
+.sidebar {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 0 1 0 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 2, 0, 1, 0);
+}
+
+.nav-header {
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 10 0;
+    -fx-text-transform: uppercase;
+}
+
+.nav-buttons {
+    -fx-spacing: 8;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #374151;
+    -fx-font-size: 14px;
+    -fx-alignment: center-left;
+    -fx-padding: 12 16;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+}
+
+.nav-button:hover {
+    -fx-background-color: #f3f4f6;
+    -fx-text-fill: #1f2937;
+}
+
+.nav-button:pressed, .nav-button.active {
+    -fx-background-color: linear-gradient(to right, #667eea 0%, #764ba2 100%);
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 1);
+}
+
+.sidebar-footer {
+    -fx-padding: 20 0 0 0;
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 1 0 0 0;
+}
+
+.refresh-button, .settings-button {
+    -fx-background-color: #10b981;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-padding: 10 16;
+}
+
+.settings-button {
+    -fx-background-color: #6b7280;
+}
+
+.refresh-button:hover {
+    -fx-background-color: #059669;
+}
+
+.settings-button:hover {
+    -fx-background-color: #4b5563;
+}
+
+.content-container {
+    -fx-background-color: #f5f6fa;
+}
+
+.content-pane {
+    -fx-background-color: transparent;
+}
+
+.loading-pane {
+    -fx-background-color: rgba(255,255,255,0.9);
+    -fx-background-radius: 12;
+    -fx-padding: 30;
+}
+
+.loading-text {
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 14px;
+}
+
+.footer-section {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 1 0 0 0;
+}
+
+.footer-text {
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 12px;
+}
+
+
+
+.page-container {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.page-header {
+    -fx-padding: 0 0 15 0;
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 0 0 1 0;
+}
+
+.page-title {
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.action-button {
+    -fx-background-color: #e5e7eb;
+    -fx-text-fill: #374151;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+
+.action-button:hover {
+    -fx-background-color: #d1d5db;
+}
+
+.action-button-primary {
+    -fx-background-color: linear-gradient(to right, #667eea 0%, #764ba2 100%);
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 0, 1);
+}
+
+.action-button-primary:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 4, 0, 0, 2);
+}
+
+.content-scroll {
+    -fx-background-color: transparent;
+    -fx-hbar-policy: never;
+    -fx-vbar-policy: as-needed;
+}
+
+.content-scroll .viewport {
+    -fx-background-color: transparent;
+}
+
+.cards-container {
+    -fx-background-color: transparent;
+}
+
+.data-card, .info-card, .actions-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 8, 0, 0, 2);
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+}
+
+.actions-card {
+    -fx-padding: 16 20;
+}
+
+.card-title {
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.status-indicator {
+    -fx-text-fill: #10b981;
+    -fx-font-size: 14px;
+}
+
+.data-text-area {
+    -fx-background-color: #f9fafb;
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 12;
+    -fx-font-family: "Consolas", "Monaco", "Courier New", monospace;
+    -fx-font-size: 12px;
+    -fx-text-fill: #374151;
+}
+
+.data-text-area:focused {
+    -fx-border-color: #667eea;
+    -fx-border-width: 2;
+}
+
+.stats-grid {
+    -fx-background-color: #f9fafb;
+    -fx-background-radius: 8;
+    -fx-padding: 15;
+}
+
+.stat-label {
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.stat-value {
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 13px;
+}
+
+.actions-label {
+    -fx-text-fill: #6b7280;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.secondary-button {
+    -fx-background-color: #f3f4f6;
+    -fx-text-fill: #374151;
+    -fx-font-size: 12px;
+    -fx-background-radius: 6;
+    -fx-padding: 6 12;
+    -fx-cursor: hand;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #e5e7eb;
+}
+
+.toggle-button {
+    -fx-background-color: #fbbf24;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 6 12;
+    -fx-cursor: hand;
+}
+
+.toggle-button:hover {
+    -fx-background-color: #f59e0b;
+}
+
+.toggle-button.active {
+    -fx-background-color: #10b981;
+}
+
+.toggle-button.active:hover {
+    -fx-background-color: #059669;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-background-radius: 5;
+    -fx-pref-width: 8;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: #f3f4f6;
+    -fx-background-radius: 5;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #d1d5db;
+    -fx-background-radius: 5;
+}
+
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #9ca3af;
+}
+
+.main-container[width<700] .sidebar {
+    -fx-pref-width: 160;
+}
+
+.main-container[width<700] .nav-button {
+    -fx-pref-width: 130;
+    -fx-font-size: 12px;
+}
